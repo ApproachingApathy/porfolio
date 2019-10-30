@@ -153,7 +153,7 @@ footer {
 @media screen and (min-width:1000px) {
     body {
     /* Background Image */
-    background-image: url(images/close-up-code-coding-160107.jpg);
+    background-image: url(../images/close-up-code-coding-160107.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
