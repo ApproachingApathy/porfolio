@@ -86,12 +86,12 @@ footer {
     padding: 0;
 }
 
-.panel--block a {
+.panel--block>a {
     padding: 20px 10px;
     border-bottom: 1px solid rgb(110, 110, 212);
 }
 
-.panel--block a:last-child {
+.panel--block>a:last-child {
     border-bottom: initial;
 }
 
@@ -125,12 +125,12 @@ footer {
     border-bottom: 6px solid var(--accent-color);
 }
 
-.panel a {
+.panel>a {
     text-decoration: none;
     color: inherit;
 }
 
-.panel a:hover {
+.panel>a:hover {
     background-color: var(--accent-color);
 }
 
