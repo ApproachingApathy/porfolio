@@ -128,6 +128,7 @@ footer {
 .panel>a {
     text-decoration: none;
     color: inherit;
+    width: 100%;
 }
 
 .panel>a:hover {
@@ -148,12 +149,13 @@ footer {
 
 .profile__photo img {
     border-radius: 50%;
+    width: 100%;
 }
 
 @media screen and (min-width:1000px) {
     body {
     /* Background Image */
-    background-image: url(../images/close-up-code-coding-160107.jpg);
+    background-image: url(../images/close-up-code-coding-160107-small-blur.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
