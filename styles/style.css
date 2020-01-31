@@ -1,197 +1,195 @@
 :root {
-    --container-width:1000px;
-    --pad-standard:20px;
-    /* Colors */
-    --text-color: unset;
-    --background: black;
-    --accent-color: rgb(110, 110, 212);
-    /* Typeface */
-    --font-primary: 'Saira Condensed', sans-serif;
-
+	--container-width: 1000px;
+	--pad-standard: 20px;
+	/* Colors */
+	--text-color: unset;
+	--background: black;
+	--accent-color: rgb(110, 110, 212);
+	/* Typeface */
+	--font-primary: "Saira Condensed", sans-serif;
 }
 
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    min-height: 100vh;
-    /* Colors */
-    background-color: var(--background);
-    color: var(--text-color);
-    /* Fonts */
-    font-family: var(--font-primary);
-    font-size: 2em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+	min-height: 100vh;
+	/* Colors */
+	background-color: var(--background);
+	color: var(--text-color);
+	/* Fonts */
+	font-family: var(--font-primary);
+	font-size: 2em;
 }
 
 img {
-    max-width: 100%;
+	max-width: 100%;
 }
 
 footer {
-    font-size: .50em;
+	font-size: 0.5em;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    background-color: white;
-    box-shadow: 0 0 20px 3px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	background-color: white;
+	box-shadow: 0 0 20px 3px;
 }
 
 .header {
-    text-align: center;
+	text-align: center;
 }
 
 .block {
-    padding: var(--pad-standard);
+	padding: var(--pad-standard);
 }
 
 .block--social-links {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0;
 }
 
 .media-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 50%;
-
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+	padding: 20px;
+	border-radius: 50%;
 }
 
-.media-icon:hover, .media-icon:focus, .media-icon:active {
-    color: var(--accent-color);
-    background-color: var(--accent-color);
+.media-icon:hover,
+.media-icon:focus,
+.media-icon:active {
+	color: var(--accent-color);
+	background-color: var(--accent-color);
 }
 
 .block--profile {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
 }
 
 .block--projects {
-    padding: 0;
+	padding: 0;
 }
 
-.panel--block>a {
-    padding: 20px 10px;
-    border-bottom: 1px solid rgb(110, 110, 212);
+.panel--block > a {
+	padding: 20px 10px;
+	border-bottom: 1px solid rgb(110, 110, 212);
 }
 
-.panel--block>a:last-child {
-    border-bottom: initial;
+.panel--block > a:last-child {
+	border-bottom: initial;
 }
 
 .block--item img {
-    width: 100%;
+	width: 100%;
 }
 
 .block--technologies {
-    display: none;
-    align-items: center;
-    justify-content: space-around;
+	display: none;
+	align-items: center;
+	justify-content: space-around;
 }
 
 .block--technologies .technology-icon {
-    display: flex;
-    justify-content: center;
-    padding: 40px;
-    border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	padding: 40px;
+	border-radius: 50%;
 }
 
 .block--technologies .technology-icon:hover {
-    background-color: var(--accent-color);
+	background-color: var(--accent-color);
 }
 
 .panel {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(214, 214, 214, 0.473);
-    border-top: 6px solid var(--accent-color);
-    border-bottom: 6px solid var(--accent-color);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(214, 214, 214, 0.473);
+	border-top: 6px solid var(--accent-color);
+	border-bottom: 6px solid var(--accent-color);
 }
 
-.panel>a {
-    text-decoration: none;
-    color: inherit;
-    width: 100%;
+.panel > a {
+	text-decoration: none;
+	color: inherit;
+	width: 100%;
 }
 
-.panel>a:hover {
-    background-color: var(--accent-color);
+.panel > a:hover {
+	background-color: var(--accent-color);
 }
 
 .profile__short-summary {
-    padding: 0;
+	padding: 0;
 }
 
 .profile__photo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-shrink: 0;
-    width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-shrink: 0;
+	width: 100%;
 }
 
 .profile__photo img {
-    border-radius: 50%;
-    width: 100%;
+	border-radius: 50%;
+	width: 100%;
 }
 
-@media screen and (min-width:1000px) {
-    body {
-    /* Background Image */
-    background-image: url(../images/close-up-code-coding-160107-small-blur.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    }
+@media screen and (min-width: 1000px) {
+	body {
+		/* Background Image */
+		background-image: url(../images/close-up-code-coding-160107-small-blur.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+	}
 
-    .container {
-        max-width: var(--container-width);
-        margin-top: 60px;
-        /* Fonts */
-        font-size: 1em;
-    }
+	.container {
+		max-width: var(--container-width);
+		margin-top: 60px;
+		/* Fonts */
+		font-size: 1em;
+	}
 
-    .block--projects {
-        padding: var(--pad-standard);
-    }
+	.block--projects {
+		padding: var(--pad-standard);
+	}
 
-    .block--profile {
-        flex-wrap: unset;
-    }
+	.block--profile {
+		flex-wrap: unset;
+	}
 
-    .block--technologies {
-        display: flex;
-    }
+	.block--technologies {
+		display: flex;
+	}
 
-    .panel {
-        border: 6px solid var(--accent-color);
-    }
+	.panel {
+		border: 6px solid var(--accent-color);
+	}
 
-    .profile__photo {
-        margin: 0;
-        width: 35%;
-    }
+	.profile__photo {
+		margin: 0;
+		width: 35%;
+	}
 
-    .profile__short-summary {
-        padding:40px;
-    }
-    
+	.profile__short-summary {
+		padding: 40px;
+	}
 }
-
