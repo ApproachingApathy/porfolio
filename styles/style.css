@@ -6,6 +6,7 @@
 	--background: black;
 	--content-background: white;
 	--accent-color: rgb(110, 110, 212);
+	--icon-to-white-filter: invert(100%) brightness(100%) contrast(100%);
 	/* Typeface */
 	--font-primary: "Saira Condensed", sans-serif;
 }
@@ -17,12 +18,12 @@
 		--content-background: rgb(26, 26, 26);
 	}
 
-	.media-icon {
-		filter: invert(100%) brightness(100%) contrast(100%);
+	.media-icon > img {
+		filter: var(--icon-to-white-filter);
 	}
 
-	.technology-icon {
-		filter: invert(100%) brightness(100%) contrast(100%);
+	.technology-icon > img {
+		filter: var(--icon-to-white-filter);
 	}
 }
 
